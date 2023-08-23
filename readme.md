@@ -1,7 +1,7 @@
 
 # Footleague API
 
-This project exposes a GraphQL API that allows users to import and retrieve data about football leagues, teams, and players. It interacts with the [football-data.org](http://www.football-data.org/) API to fetch data, which is then stored in a MongoDB database.
+This project exposes a GraphQL API allowing users to import and retrieve football leagues, teams, and player's data. It interacts with the [football-data.org](http://www.football-data.org/) API to fetch data, which is then stored in a MongoDB database.
 
 ## Technologies Used:
 - **Node.js** for the server environment.
@@ -55,7 +55,7 @@ The project has a minimalistic design, which improves readability. Making it eas
 The API defines the following main entities:
 - **League**: Represents a football league.
 - **Team**: Represents a football team associated with a league.
-- **Player**: Represents a player associated with a team.
+- **Player**: Represents a player or coach associated with a team.
 
 ```mermaid
 classDiagram
