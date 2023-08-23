@@ -1,0 +1,44 @@
+type League {
+  _id: ID!
+  apiId: Int!
+  name: String!
+  code: String!
+  areaName: String!
+  Teams: [Team]
+}
+
+type Team {
+  _id: ID!
+  apiId: Int!
+  name: String!
+  tla: String!
+  shortName: String!
+  areaName: String!
+  address: String
+  leagues: [League]
+  Players: [Player]
+}
+
+type Player {
+  _id: ID!
+  apiId: Int!
+  name: String!
+  position: String
+  dateOfBirth: String
+  nationality: String
+  team: Team!
+}
+
+type Query {
+  team(name: String!): Team
+  player(name: String!): Player
+  players(leagueCode: String!, teamName: String): [Player]
+  league(name: String!): League
+  allLeagues: [League]
+  allPlayers: [Player]
+  allTeams: [Team]
+}
+
+type Mutation {
+  importLeague(leagueCode: String!): Boolean
+}

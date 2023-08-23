@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "target": "ES6",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+     
+    },
+    "include": ["src/**/*.ts", "src/tests/importLeagueService.test.ts"],
+    "exclude": ["node_modules"]
+  }
+  
