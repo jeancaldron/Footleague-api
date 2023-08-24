@@ -49,7 +49,7 @@ The project has a minimalistic design, which improves readability. Making it eas
   ```bash
   docker-compose up --build
   ```
-3. The GraphQL API and Playground will be accessible at `http://localhost:4050`
+3. The GraphQL API and Playground will be accessible at [http://localhost:4050](http://localhost:4050)
 
 ## GraphQL Schema:
 The API defines the following main entities:
