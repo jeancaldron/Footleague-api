@@ -81,7 +81,7 @@ classDiagram
         +areaName: String!
         +address: String
         +leagues: [League]
-        Players: [Player]
+        +Players: [Player]
     }
     class Player {
         +_id: ID!
