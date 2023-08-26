@@ -68,7 +68,7 @@ class ImportLeagueService {
       });
 
       const squad = teamData.squad || [];
-      if (squad.length >= 0) {
+      if (squad.length > 0) {
         await Promise.all(
           squad.map((player) => this.createPlayer(player, team._id))
         );
